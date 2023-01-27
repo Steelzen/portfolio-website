@@ -1,11 +1,17 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ user }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <NavLink className="navbar-brand" to="/">
-        Taehyung, Kwon
+        Home
+      </NavLink>
+      <NavLink className="navbar-brand" to="/projects">
+        Projects
+      </NavLink>
+      <NavLink className="navbar-brand" to="/about-me">
+        About Me
       </NavLink>
     </nav>
   );
