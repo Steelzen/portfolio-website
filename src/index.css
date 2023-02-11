@@ -1,13 +1,80 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* 
+// Best Practice suggests
+// keep default style for smallest screen size (portrait mobile, below 576px)
+// and then proceed in assending order with media query like below 
+*/
+
+/* Footer */
+.footer {
+  max-width: 100%;
+  height: 20em;
+  background-color: rgb(234, 229, 233);
+}
+
+.logo {
+  color: rgb(241, 123, 19);
+}
+
+/* Introduction */
+.main-flex {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 570px;
+  max-width: 100%;
+  max-height: 56vh;
+  margin-bottom: 2em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://wallpapers.com/images/hd/citizens-in-rainy-season-in-cyberpunk-city-gijhy9r98d9aph8r.webp");
+  overflow: hidden;
+}
+
+.main-flex > p {
+  height: 30em;
+}
+
+/* Main page */
+.main-page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.main-page > div {
+  border-top-style: solid;
+  border-top-color: rgb(186, 174, 174);
+}
+
+/* // Small devices (landscape phones, 576px and above till next break point) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and above till next break point) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and above till next break point) */
+@media (min-width: 992px) {
+}
+
+/*  For desktop */
+
+/* For Tablet */
+
+/* For Mobile */
