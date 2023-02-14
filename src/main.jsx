@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import AboutMe from "./components/aboutMe";
 import Project from "./components/project";
 
 class MainPage extends Component {
@@ -7,8 +8,9 @@ class MainPage extends Component {
   render() {
     return (
       <div className="main-page">
+        <AboutMe name="Taehyung Kwon" />
         <h1> This is main Page </h1>
-        <Project numbersOfRow={[1, 2, 3, 4, 5]} />
+        <Project howMany={1} />
       </div>
     );
   }

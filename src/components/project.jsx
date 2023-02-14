@@ -4,18 +4,18 @@ import ItemCard from "../common/card";
 class Project extends Component {
   state = {};
   render() {
-    const { numbersOfRow } = this.props;
+    const { howMany } = this.props;
+    const items = [];
+    for (let n = 1; n <= howMany; n++) {
+      items.push(
+        <div key={n.toString()}>
+          <h2>Section {n}</h2>
+          <ItemCard id={"test" + n} />
+        </div>
+      );
+    }
 
-    return (
-      <div className="project-list">
-        {numbersOfRow.map((number) => (
-          <div key={number.toString()} className={"section" + number}>
-            <h2>Section {number}</h2>
-            <ItemCard id={"project" + number} />
-          </div>
-        ))}
-      </div>
-    );
+    return <div className="project-list">{items}</div>;
   }
 }
 

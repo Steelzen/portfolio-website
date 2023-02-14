@@ -30,8 +30,7 @@ const Introduction = (props) => {
       <MyPicture />
       <div id={id}>
         Hi, this is developer Taehyung's webpage. Very welcome eveyone. You can
-        see my works in here. If you need detail information about me please go
-        to "About Me" page.
+        see my works in here.
       </div>
     </div>
   );

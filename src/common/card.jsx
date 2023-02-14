@@ -3,7 +3,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 function ItemCard(props) {
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card>
       <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
       <Card.Body>
         <Card.Title>Dynamic {props.id} </Card.Title>
@@ -20,8 +20,8 @@ function ItemCard(props) {
         <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
       </ListGroup>
       <Card.Body>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
+        <Card.Link href="#">Link</Card.Link>
+        <Card.Link href="#">GitHub</Card.Link>
       </Card.Body>
     </Card>
   );

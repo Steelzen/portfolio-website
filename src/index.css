@@ -62,11 +62,11 @@ code {
 }
 
 #introduction2 {
-  margin-top: 20em;
+  margin-top: 13em;
   margin-right: auto;
   margin-left: auto;
   max-width: 420px;
-  text-align: left;
+  text-align: start;
   font-family: Poppins;
   font-weight: 700;
   font-size: large;
