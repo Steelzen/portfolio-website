@@ -1,21 +1,14 @@
 import React, { Component } from "react";
-import ProjectCard from "./common/card";
+import Project from "./components/project";
 
 class MainPage extends Component {
   state = {};
 
   render() {
-    const { numbersOfRow } = this.props;
-
     return (
       <div className="main-page">
         <h1> This is main Page </h1>
-        {numbersOfRow.map((number) => (
-          <div key={number.toString()} className={"section" + number}>
-            <h2>Section {number}</h2>
-            <ProjectCard id={"project" + number} />
-          </div>
-        ))}
+        <Project numbersOfRow={[1, 2, 3, 4, 5]} />
       </div>
     );
   }

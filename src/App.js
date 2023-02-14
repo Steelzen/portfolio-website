@@ -30,11 +30,7 @@ function App() {
       <Calculator />
       <main className="container">
         <Routes>
-          <Route
-            exact
-            path="/"
-            element={<MainPage numbersOfRow={[1, 2, 3, 4, 5]} />}
-          />
+          <Route exact path="/" element={<MainPage />} />
           <Route
             exact
             path="/about-me"
