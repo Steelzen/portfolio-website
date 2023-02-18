@@ -7,12 +7,7 @@ class Project extends Component {
     const { howMany } = this.props;
     const items = [];
     for (let n = 1; n <= howMany; n++) {
-      items.push(
-        <div key={n.toString()}>
-          <h2>Section {n}</h2>
-          <ItemCard id={"test" + n} />
-        </div>
-      );
+      items.push(<ItemCard key={n.toString()} id={"test" + n} />);
     }
 
     return <div className="project-list">{items}</div>;

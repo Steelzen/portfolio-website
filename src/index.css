@@ -12,6 +12,13 @@ code {
     monospace;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
 /* 
 // Best Practice suggests
 // keep default style for smallest screen size (portrait mobile, below 576px)
@@ -22,7 +29,7 @@ code {
 .footer {
   max-width: 100%;
   height: 20em;
-  background-color: rgb(234, 229, 233);
+  background-color: rgb(243, 240, 240);
 }
 
 .logo {
@@ -81,15 +88,48 @@ code {
   max-width: 100%;
 }
 
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .project-list > div {
-  border-top-style: solid;
-  border-top-color: rgb(186, 174, 174);
+  flex: 100%;
   justify-content: center;
   align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: black;
+  color: white;
+}
+
+.project-title-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-top-style: solid;
+  border-top-color: rgb(186, 174, 174);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.add-project-button {
+  margin-left: 2em;
+  margin-right: 2em;
+  max-width: 54px;
+  max-height: 40px;
 }
 
 .card {
   margin-bottom: 2em;
+}
+
+.code-link {
+  margin-left: 35px;
 }
 
 /* // Small devices (landscape phones, 576px and above till next break point) */
@@ -98,6 +138,11 @@ code {
 
 /* // Medium devices (tablets, 768px and above till next break point) */
 @media (min-width: 768px) {
+  .project-list > div {
+    flex: 48%;
+    align-content: space-between;
+    margin: 5px;
+  }
 }
 
 /* // Large devices (desktops, 992px and above till next break point) */
