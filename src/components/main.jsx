@@ -20,7 +20,7 @@ class MainPage extends Component {
   render() {
     return (
       <div className="main-page">
-        <AboutMe name="Taehyung Kwon" />
+        <AboutMe />
         <div className="project-title-container">
           <h1> My Works </h1>
           {/* this will be for admin only */}
