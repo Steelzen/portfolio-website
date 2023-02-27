@@ -5,10 +5,10 @@ import Button from "react-bootstrap/esm/Button";
 class AboutMe extends React.Component {
   state = { details: [] };
 
-  componentDidMount() {
+  async componentDidMount() {
     let data;
 
-    axios
+    await axios
       .get("http://localhost:8000/mydata/aboutme/list/1")
       .then((res) => {
         data = res.data;
