@@ -19,9 +19,16 @@ class Project extends Component {
       .catch((err) => {});
   }
 
-  handleClick = (event) => {
-    console.log("Delete " + event.target.value);
-  };
+  async handleClick(event) {
+    await axios
+      .delete(
+        "http://localhost:8000/mydata/project/delete/" + event.target.value
+      )
+      .then(() => alert("delete successful"))
+      .catch((err) => {
+        alert("delete unsuccessful");
+      });
+  }
 
   render() {
     const details = this.state.details;
