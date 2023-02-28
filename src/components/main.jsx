@@ -4,18 +4,9 @@ import Project from "./project";
 import Button from "react-bootstrap/esm/Button";
 
 class MainPage extends Component {
-  state = {
-    numberOfProject: 0,
-  };
+  state = {};
 
   async componentDidMount() {}
-
-  handleAdd = () => {
-    // take the number of project from database.
-    var numberOfProject = this.state.numberOfProject;
-    numberOfProject += 1;
-    this.setState({ numberOfProject: numberOfProject });
-  };
 
   render() {
     return (
@@ -28,7 +19,6 @@ class MainPage extends Component {
             className="add-project-button"
             href="/projectCreate"
             variant="primary"
-            onClick={this.handleAdd}
           >
             Add
           </Button>
