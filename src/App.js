@@ -5,6 +5,7 @@ import NotFound from "./components/notFound";
 import Introduction from "./components/introduction";
 import Tools from "./components/tools";
 import AboutMeEdit from "./components/aboutMeEdit";
+import ProjectCreate from "./components/projectCreate";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/" element={<MainPage />} />
           <Route path="/tools/:id" element={<Tools />} />
           <Route path="/aboutMeEdit" element={<AboutMeEdit />} />
+          <Route path="/projectCreate" element={<ProjectCreate />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

@@ -26,7 +26,7 @@ class MainPage extends Component {
           {/* this will be for admin only */}
           <Button
             className="add-project-button"
-            href="#"
+            href="/projectCreate"
             variant="primary"
             onClick={this.handleAdd}
           >
