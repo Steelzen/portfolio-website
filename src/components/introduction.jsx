@@ -25,6 +25,12 @@ const Introduction = (props) => {
       .then((res) => {
         data = res.data;
         setDetails(data[0]);
+
+        const titleImg = data[0]["title_img_src"];
+        document.documentElement.style.setProperty(
+          "--title-img",
+          `url("${titleImg}")`
+        );
       })
       .catch((err) => {});
 
