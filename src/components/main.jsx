@@ -14,7 +14,7 @@ class MainPage extends Component {
         <div className="project-title-container">
           <h1> My Works </h1>
         </div>
-        <Project howMany={this.state.numberOfProject} />
+        <Project />
       </div>
     );
   }
