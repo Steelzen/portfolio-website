@@ -3,10 +3,7 @@ import NavBar from "./components/navBar";
 import MainPage from "./components/main";
 import NotFound from "./components/notFound";
 import Introduction from "./components/introduction";
-import Tools from "./components/tools";
-import AboutMeEdit from "./components/aboutMeEdit";
-import ProjectCreate from "./components/projectCreate";
-import ProjectEdit from "./components/projectEdit";
+import Tools from "./examples/tools";
 import "./App.css";
 
 function App() {
@@ -18,9 +15,6 @@ function App() {
         <Routes>
           <Route exact path="/" element={<MainPage />} />
           <Route path="/tools/:id" element={<Tools />} />
-          <Route path="/aboutMeEdit" element={<AboutMeEdit />} />
-          <Route path="/projectCreate" element={<ProjectCreate />} />
-          <Route path="/projectEdit/:id" element={<ProjectEdit />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

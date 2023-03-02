@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Button from "react-bootstrap/esm/Button";
 
 class Project extends Component {
   state = {
@@ -19,17 +18,6 @@ class Project extends Component {
       .catch((err) => {});
   }
 
-  async handleClick(event) {
-    await axios
-      .delete(
-        "http://localhost:8000/mydata/project/delete/" + event.target.value
-      )
-      .then(() => alert("delete successful"))
-      .catch((err) => {
-        alert("delete unsuccessful");
-      });
-  }
-
   render() {
     const details = this.state.details;
 
@@ -45,21 +33,6 @@ class Project extends Component {
             Code
           </a>
         </div>
-        <Button
-          className="edit-project-button"
-          href={"/projectEdit/" + detail["id"]}
-          variant="primary"
-        >
-          Edit
-        </Button>
-        <Button
-          className="delete-project-button"
-          variant="primary"
-          value={detail["id"]}
-          onClick={this.handleClick}
-        >
-          Delete
-        </Button>
       </div>
     ));
 

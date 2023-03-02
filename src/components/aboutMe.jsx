@@ -23,13 +23,6 @@ class AboutMe extends React.Component {
     return (
       <div>
         <h1> About Me </h1>
-        <Button
-          className="edit-aboutme-button"
-          href="/aboutMeEdit"
-          variant="primary"
-        >
-          Edit
-        </Button>
         <p>name: {this.state.details["name"]}</p>
         <p>email: {this.state.details["email"]} </p>
         <p>phone: {this.state.details["phone"]}</p>
