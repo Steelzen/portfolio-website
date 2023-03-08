@@ -21,7 +21,7 @@ const Introduction = (props) => {
     let data;
 
     axios
-      .get("http://localhost:8000/mydata/aboutme/list")
+      .get("http://steelzen-website.herokuapp.com/mydata/aboutme/list")
       .then((res) => {
         data = res.data;
         setDetails(data[0]);

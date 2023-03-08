@@ -27,7 +27,9 @@ function NavBar({ user }) {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="http://localhost:8000/admin/">Admin</Nav.Link>
+            <Nav.Link href="http://steelzen-website.herokuapp.com/admin/">
+              Admin
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
