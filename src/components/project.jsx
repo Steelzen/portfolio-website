@@ -33,6 +33,7 @@ class Project extends Component {
             Code
           </a>
         </div>
+        <img className="project-img" src={detail["img_src"]} />
       </div>
     ));
 

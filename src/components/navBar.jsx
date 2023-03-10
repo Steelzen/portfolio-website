@@ -17,7 +17,12 @@ function NavBar({ user }) {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
+            {/* hide nav dropdown bar for future update */}
+            <NavDropdown
+              title="Link"
+              id="navbarScrollingDropdown"
+              style={{ display: "none" }}
+            >
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
@@ -27,9 +32,7 @@ function NavBar({ user }) {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="http://steelzen-website.herokuapp.com/admin/">
-              Admin
-            </Nav.Link>
+            <Nav.Link style={{ display: "none" }}>Linking something</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

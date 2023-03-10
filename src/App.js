@@ -3,24 +3,21 @@ import NavBar from "./components/navBar";
 import MainPage from "./components/main";
 import NotFound from "./components/notFound";
 import Introduction from "./components/introduction";
-import Tools from "./examples/tools";
+import Footer from "./components/footer";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <NavBar className="navbar" />
       <Introduction />
       <main className="container-main">
         <Routes>
           <Route exact path="/" element={<MainPage />} />
-          <Route path="/tools/:id" element={<Tools />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
-      <div className="footer">
-        <h2>This is Footer </h2>
-      </div>
+      <Footer />
     </div>
   );
 }
