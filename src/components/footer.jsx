@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import $ from "jquery";
 
 const Footer = (props) => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="footer">
       <div className="ft-content">
@@ -14,7 +16,7 @@ const Footer = (props) => {
           </a>
         </div>
         <div className="copyright-container">
-          <p>Copyright Taehyung Kwon</p>
+          <p>Copyright {currentYear} Taehyung Kwon</p>
         </div>
       </div>
     </div>

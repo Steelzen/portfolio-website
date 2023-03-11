@@ -17,10 +17,10 @@ const Introduction = (props) => {
     }
   };
 
-  useEffect(() => {
+  const fetchData = async () => {
     let data;
 
-    axios
+    await axios
       .get("http://steelzen-website.herokuapp.com/mydata/aboutme/list")
       .then((res) => {
         data = res.data;
@@ -33,6 +33,10 @@ const Introduction = (props) => {
         );
       })
       .catch((err) => {});
+  };
+
+  useEffect(() => {
+    fetchData();
 
     window.addEventListener("scroll", handleScroll, true);
 
