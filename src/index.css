@@ -31,6 +31,7 @@ a:visited {
   top: 0;
   width: 100%;
   z-index: 999;
+  border-bottom: 2px solid rgb(241, 123, 19);
 }
 
 .logo {
@@ -70,7 +71,7 @@ a:visited {
 }
 
 #introduction2 {
-  margin-top: 13em;
+  margin-top: 15em;
   margin-right: auto;
   margin-left: auto;
   max-width: 420px;
@@ -177,6 +178,18 @@ a:visited {
 
 /* // Medium devices (tablets, 768px and above till next break point) */
 @media (min-width: 768px) {
+  .main-flex {
+    flex-direction: row-reverse;
+  }
+
+  #introduction2 {
+    margin: 0;
+  }
+
+  .my-picture {
+    position: relative;
+  }
+
   .project-list {
     margin-top: 5px;
     margin-bottom: 5px;

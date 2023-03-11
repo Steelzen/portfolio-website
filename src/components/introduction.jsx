@@ -55,7 +55,10 @@ const Introduction = (props) => {
           alt="profile-photo"
         ></img>
       </div>
-      <div id={id}>{details["introductory"]}</div>
+      <div id={id} className="intro-message">
+        <h1>WELCOME...</h1>
+        <div>{details["introductory"]}</div>
+      </div>
     </div>
   );
 };
