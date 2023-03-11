@@ -168,6 +168,19 @@ p {
 
 .aboutme-text {
   color: rgb(71, 70, 70);
+  margin-top: 20px;
+}
+
+.tech-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-img {
+  max-width: 65px;
+  padding-bottom: 7px;
+  padding-right: 7px;
 }
 
 .contactme-container {
