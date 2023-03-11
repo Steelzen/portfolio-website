@@ -20,14 +20,19 @@ class AboutMe extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1> About Me </h1>
-        <p>name: {this.state.details["name"]}</p>
-        <p>email: {this.state.details["email"]} </p>
-        <p>phone: {this.state.details["phone"]}</p>
-        <p>site: {this.state.details["site"]}</p>
-        <p>github: {this.state.details["github"]}</p>
-        <p>{this.state.details["summary"]}</p>
+      <div className="aboutme">
+        <div className="aboutme-container">
+          <h1 className="aboutme-text"> About {this.state.details["name"]} </h1>
+          <p className="aboutme-text">{this.state.details["summary"]}</p>
+          <h4 className="aboutme-text">Technical Skills</h4>
+          <div classNmae="tech-img-container"></div>
+          <h4 className="aboutme-text">Contact Me</h4>
+          <div className="contactme-container">
+            <a href={"mailto:" + this.state.details["email"]}>Email</a>
+            <a href={this.state.details["site"]}>LinkedIn</a>
+            <a href={this.state.details["github"]}>Github</a>
+          </div>
+        </div>
       </div>
     );
   }

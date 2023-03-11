@@ -24,7 +24,7 @@ class Project extends Component {
     const items = details.map((detail) => (
       <div key={detail["id"]} className={"project-" + detail["id"]}>
         <h2>{detail["name"]}</h2>
-        <p>{detail["content"]}</p>
+        <p className="project-text">{detail["content"]}</p>
         <div>
           <a className="site-link" href={detail["site_link"]}>
             Link
