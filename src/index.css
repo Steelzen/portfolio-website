@@ -95,6 +95,10 @@ p {
   color: white;
 }
 
+.intro-message > div {
+  font-size: larger;
+}
+
 /* Main page */
 .main-page {
   display: flex;
