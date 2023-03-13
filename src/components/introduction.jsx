@@ -19,7 +19,7 @@ const Introduction = (props) => {
     let data;
 
     await axios
-      .get("http://steelzen-website.herokuapp.com/mydata/aboutme/list")
+      .get("https://steelzen-website.herokuapp.com/mydata/aboutme/list")
       .then((res) => {
         data = res.data;
         setDetails(data[0]);

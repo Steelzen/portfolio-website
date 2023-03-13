@@ -10,7 +10,7 @@ class Project extends Component {
     let data;
 
     await axios
-      .get("http://steelzen-website.herokuapp.com/mydata/project/list")
+      .get("https://steelzen-website.herokuapp.com/mydata/project/list")
       .then((res) => {
         data = res.data;
         this.setState({ details: data });

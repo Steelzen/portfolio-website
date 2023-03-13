@@ -8,7 +8,7 @@ class AboutMe extends React.Component {
     let data;
 
     await axios
-      .get("http://steelzen-website.herokuapp.com/mydata/aboutme/list")
+      .get("https://steelzen-website.herokuapp.com/mydata/aboutme/list")
       .then((res) => {
         data = res.data;
         this.setState({
