@@ -29,38 +29,47 @@ class AboutMe extends React.Component {
             <img
               className="tech-img"
               src="https://i.ibb.co/wN35QWj/Java-logo.png"
+              alt="Java-logo"
             />
             <img
               className="tech-img"
               src="https://i.ibb.co/SvdgbM6/Java-Script-logo.png"
+              alt="JS-logo"
             />
             <img
               className="tech-img"
               src="https://i.ibb.co/fSCwYVY/Python-logo.png"
+              alt="Python-logo"
             />
             <img
               className="tech-img"
               src="https://i.ibb.co/Xb5HCZ6/CSS-logo.png"
+              alt="CSS-logo"
             />
             <img
               className="tech-img"
               src="https://i.ibb.co/Y3YGbr9/android-logo.jpg"
+              alt="Android-logo"
             />
             <img
               className="tech-img"
               src="https://i.ibb.co/L81KSpJ/React-logo.png"
+              alt="React-logo"
             />
             <img
               className="tech-img"
               src="https://i.ibb.co/ydkptPJ/django-logo.jpg"
+              alt="Django-logo"
             />
             <img
               className="tech-img"
               src="https://i.ibb.co/9sVXgGz/SQL-logo.png"
+              alt="SQL-logo"
             />
             <img
               className="tech-img"
               src="https://i.ibb.co/0rvrJfz/Git-logo.png"
+              alt="Git-logo"
             />
           </div>
           <h4 className="aboutme-text">Contact Me</h4>

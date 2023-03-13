@@ -52,7 +52,7 @@ const Introduction = (props) => {
         <img
           src={details["photo_src"]}
           className="rounded-circle"
-          alt="profile-photo"
+          alt="profile"
         ></img>
       </div>
       <div id={id} className="intro-message">
