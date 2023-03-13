@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import $ from "jquery";
-import _uniqueId from "lodash/uniqueId";
 
 const Introduction = (props) => {
-  const [id] = useState(_uniqueId("introduction"));
   const [details, setDetails] = useState(0);
 
   const handleScroll = (event) => {
     if (document.documentElement.scrollTop >= 400) {
       $(".my-picture").fadeOut();
-      $("#introduction2").fadeOut();
+      $(".intro-message").fadeOut();
     } else {
       $(".my-picture").fadeIn("slow");
-      $("#introduction2").fadeIn("fast");
+      $(".intro-message").fadeIn("fast");
     }
   };
 
@@ -55,7 +53,7 @@ const Introduction = (props) => {
           alt="profile"
         ></img>
       </div>
-      <div id={id} className="intro-message">
+      <div className="intro-message">
         <h1>WELCOME...</h1>
         <div>{details["introductory"]}</div>
       </div>

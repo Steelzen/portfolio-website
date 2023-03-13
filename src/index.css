@@ -82,7 +82,7 @@ p {
   height: 100%;
 }
 
-#introduction2 {
+.intro-message {
   margin-top: 15em;
   margin-right: auto;
   margin-left: auto;
@@ -242,7 +242,7 @@ p {
     flex-direction: row-reverse;
   }
 
-  #introduction2 {
+  .intro-message {
     margin: 0;
   }
 
