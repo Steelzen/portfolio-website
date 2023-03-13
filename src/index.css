@@ -83,7 +83,7 @@ p {
 }
 
 .intro-message {
-  margin-top: 15em;
+  margin-top: 20em;
   margin-right: auto;
   margin-left: auto;
   max-width: 420px;
@@ -161,6 +161,7 @@ p {
 .aboutme {
   display: flex;
   justify-content: center;
+  padding: 0 10px 0 10px;
   text-align: justify;
   background-color: ivory;
 }
