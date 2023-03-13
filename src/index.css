@@ -260,7 +260,7 @@ p {
   .project-list > div {
     flex: 48%;
     align-content: space-between;
-    margin: 0 5px 0 5px;
+    margin: 10px 5px 0 5px;
   }
 }
 
