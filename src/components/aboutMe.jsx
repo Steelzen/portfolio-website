@@ -63,6 +63,11 @@ class AboutMe extends React.Component {
             />
             <img
               className="tech-img"
+              src="https://i.ibb.co/V3FYBXL/Nodejs-logo.png"
+              alt="Nodejs-logo"
+            />
+            <img
+              className="tech-img"
               src="https://i.ibb.co/9sVXgGz/SQL-logo.png"
               alt="SQL-logo"
             />
