@@ -4,6 +4,7 @@ import MainPage from "./components/main";
 import NotFound from "./components/notFound";
 import Introduction from "./components/introduction";
 import Footer from "./components/footer";
+import { ContactMe } from "./components/contactMe";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <main className="container-main">
         <Routes>
           <Route exact path="/" element={<MainPage />} />
+          <Route path="/contactme" element={<ContactMe />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
