@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AboutMe from "./aboutMe";
+import Introduction from "./introduction";
 import Project from "./project";
 
 class MainPage extends Component {
@@ -9,13 +10,16 @@ class MainPage extends Component {
 
   render() {
     return (
-      <div className="main-page">
-        <AboutMe />
-        <div className="project-title-container">
-          <h1> My Works </h1>
+      <main className="container-main">
+        <Introduction />
+        <div className="main-page">
+          <AboutMe />
+          <div className="project-title-container">
+            <h1> My Works </h1>
+          </div>
+          <Project />
         </div>
-        <Project />
-      </div>
+      </main>
     );
   }
 }
