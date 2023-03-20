@@ -32,7 +32,7 @@ function NavBar({ user }) {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link style={{ display: "none" }}>Linking something</Nav.Link>
+            <Nav.Link href="/contactme">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
