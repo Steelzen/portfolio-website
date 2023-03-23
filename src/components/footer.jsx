@@ -15,7 +15,7 @@ const Footer = (props) => {
           </a>
         </div>
         <div className="copyright-container">
-          <p>Copyright {currentYear} Taehyung Kwon</p>
+          <p>Copyright &copy; {currentYear} Taehyung Kwon</p>
         </div>
       </div>
     </div>

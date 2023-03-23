@@ -26,10 +26,10 @@ class Project extends Component {
         <h2>{detail["name"]}</h2>
         <p className="project-text">{detail["content"]}</p>
         <div>
-          <a className="site-link" href={detail["site_link"]}>
+          <a className="site-link" href={detail["site_link"]} target="_blank">
             Link
           </a>
-          <a className="code-link" href={detail["code_link"]}>
+          <a className="code-link" href={detail["code_link"]} target="_blank">
             Code
           </a>
         </div>
