@@ -80,8 +80,12 @@ class AboutMe extends React.Component {
           <h4 className="aboutme-text">Contact Me</h4>
           <div className="contactme-container">
             <a href={"mailto:" + this.state.details["email"]}>Email</a>
-            <a href={this.state.details["site"]}>LinkedIn</a>
-            <a href={this.state.details["github"]}>Github</a>
+            <a href={this.state.details["site"]} target="_blank">
+              LinkedIn
+            </a>
+            <a href={this.state.details["github"]} target="_blank">
+              Github
+            </a>
           </div>
         </div>
       </div>

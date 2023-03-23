@@ -91,12 +91,6 @@ input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-/* 
-// Best Practice suggests
-// keep default style for smallest screen size (portrait mobile, below 576px)
-// and then proceed in assending order with media query like below 
-*/
-
 /* Navbar*/
 .navbar {
   position: fixed;
@@ -184,7 +178,7 @@ input[type="submit"]:hover {
 
 .project-text {
   padding: 20px 40px 20px 40px;
-  text-align: justify;
+  text-align: left;
 }
 
 .project-title-container {
@@ -211,13 +205,12 @@ input[type="submit"]:hover {
 
 .project-img-container {
   width: 100%;
-  padding: 20px 35px 20px 35px;
+  padding: 20px 50px 20px 50px;
 }
 
 .project-img {
   width: 100%;
-  height: 100%;
-  min-height: 350px;
+  height: 350px;
   border-radius: 10px;
 }
 
@@ -226,7 +219,7 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   padding: 0 10px 0 10px;
-  text-align: justify;
+  text-align: left;
   background-color: #fdfde8;
 }
 
@@ -347,8 +340,11 @@ input[type="submit"]:hover {
   }
 }
 
-/* // Medium devices (tablets, 768px and above till next break point) */
-@media (min-width: 768px) {
+/* // Large devices (desktops, 992px and above till next break point) */
+@media (min-width: 992px) {
+}
+
+@media (min-width: 992px) {
   .main-flex {
     flex-direction: row-reverse;
   }
@@ -379,10 +375,6 @@ input[type="submit"]:hover {
     margin-left: 20px;
     margin-top: 0rem;
   }
-}
-
-/* // Large devices (desktops, 992px and above till next break point) */
-@media (min-width: 992px) {
 }
 
 /*  For desktop */
