@@ -14,8 +14,10 @@ class MainPage extends Component {
         <Introduction />
         <div className="main-page">
           <AboutMe />
-          <div className="project-title-container">
-            <h1> My Works </h1>
+          <div className="project-title-wrapper">
+            <div className="project-title-container">
+              <h1> My Works </h1>
+            </div>
           </div>
           <Project />
         </div>
