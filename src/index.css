@@ -211,17 +211,6 @@ input[type="submit"]:hover {
   margin-left: 35px;
 }
 
-.project-img-container {
-  width: 100%;
-  padding: 20px 50px 20px 50px;
-}
-
-.project-img {
-  width: 100%;
-  height: 350px;
-  border-radius: 10px;
-}
-
 /* About Me */
 .aboutme {
   display: flex;
