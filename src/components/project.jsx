@@ -33,8 +33,12 @@ class Project extends Component {
             Code
           </a>
         </div>
-        <div className="project-img-container">
-          <img className="project-img" src={detail["img_src"]} alt="project" />
+        <div className="h-auto md:h-96 p-10">
+          <img
+            className="w-full h-full rounded-lg transition-all duration-500 ease-in-out transform hover:scale-105 hover:rotate-10 cursor-pointer"
+            src={detail["img_src"]}
+            alt="project"
+          />
         </div>
       </div>
     ));
