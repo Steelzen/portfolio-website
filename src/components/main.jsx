@@ -16,7 +16,7 @@ class MainPage extends Component {
           <AboutMe />
           <div className="project-title-wrapper">
             <div className="project-title-container">
-              <h1> My Works </h1>
+              <h1 className="text-3xl "> My Works </h1>
             </div>
           </div>
           <Project />
