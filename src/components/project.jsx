@@ -23,13 +23,21 @@ class Project extends Component {
 
     const items = details.map((detail) => (
       <div key={detail["id"]} className={"project-" + detail["id"]}>
-        <h2>{detail["name"]}</h2>
+        <h2 className="text-lg font-bold">{detail["name"]}</h2>
         <p className="project-text">{detail["content"]}</p>
         <div>
-          <a className="site-link" href={detail["site_link"]} target="_blank">
+          <a
+            className="site-link text-blue-500"
+            href={detail["site_link"]}
+            target="_blank"
+          >
             Link
           </a>
-          <a className="code-link" href={detail["code_link"]} target="_blank">
+          <a
+            className="code-link text-blue-500"
+            href={detail["code_link"]}
+            target="_blank"
+          >
             Code
           </a>
         </div>

@@ -22,9 +22,12 @@ class AboutMe extends React.Component {
     return (
       <div className="aboutme">
         <div className="aboutme-container">
-          <h1 className="aboutme-text"> About {this.state.details["name"]} </h1>
+          <h1 className="aboutme-text text-lg font-bold">
+            {" "}
+            About {this.state.details["name"]}{" "}
+          </h1>
           <p className="aboutme-text">{this.state.details["summary"]}</p>
-          <h4 className="aboutme-text">Technical Skills</h4>
+          <h4 className="aboutme-text text-lg font-bold">Technical Skills</h4>
           <div className="tech-img-container">
             <img
               className="tech-img"
@@ -77,8 +80,8 @@ class AboutMe extends React.Component {
               alt="Git-logo"
             />
           </div>
-          <h4 className="aboutme-text">Contact Me</h4>
-          <div className="contactme-container">
+          <h4 className="aboutme-text text-lg font-bold">Contact Me</h4>
+          <div className="contactme-container font-bold text-blue-500">
             <a href={"mailto:" + this.state.details["email"]}>Email</a>
             <a href={this.state.details["site"]} target="_blank">
               LinkedIn
