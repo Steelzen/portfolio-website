@@ -45,17 +45,19 @@ const Introduction = (props) => {
   }, []);
 
   return (
-    <div className="main-flex">
-      <div className="my-picture">
-        <img
-          src={details["photo_src"]}
-          className="rounded-circle"
-          alt="profile"
-        ></img>
-      </div>
-      <div className="intro-message">
-        <h1>WELCOME...</h1>
-        <div>{details["introductory"]}</div>
+    <div className="introduction-wrapper">
+      <div className="main-flex">
+        <div className="my-picture">
+          <img
+            src={details["photo_src"]}
+            className="rounded-circle"
+            alt="profile"
+          ></img>
+        </div>
+        <div className="intro-message">
+          <h1>WELCOME...</h1>
+          <div>{details["introductory"]}</div>
+        </div>
       </div>
     </div>
   );
