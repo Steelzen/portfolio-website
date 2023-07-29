@@ -6,34 +6,22 @@ import TechnicalSkills from "./technicalSkills";
 import { Preload } from "@react-three/drei";
 import * as THREE from "three";
 
-import Java from "../imgs/Java-logo.png";
-import JS from "../imgs/Java-Script-logo.png";
-import Python from "../imgs/Python-logo.png";
-import CSS from "../imgs/CSS-logo.png";
-import Android from "../imgs/android-logo.jpg";
-import ReactLogo from "../imgs/React-logo.png";
-import Django from "../imgs/django-logo.jpg";
-import Nodejs from "../imgs/Nodejs-logo.png";
-import SQL from "../imgs/SQL-logo.png";
-import Git from "../imgs/Git-logo.png";
-import Tailwind from "../imgs/Tailwind-logo.jpeg";
-
 const AboutMe = () => {
   const [details, setDetails] = useState([]);
 
   // Array of image URLs to use as textures
   const imageUrls = [
-    Java,
-    JS,
-    Python,
-    CSS,
-    Tailwind,
-    Android,
-    ReactLogo,
-    Django,
-    Nodejs,
-    SQL,
-    Git,
+    "https://i.ibb.co/Z8znc9m/Java-logo.png",
+    "https://i.ibb.co/SvdgbM6/Java-Script-logo.png",
+    "https://i.ibb.co/fSCwYVY/Python-logo.png",
+    "https://i.ibb.co/Xb5HCZ6/CSS-logo.png",
+    "https://i.ibb.co/4tHqF2F/Tailwind-logo.jpg",
+    "https://i.ibb.co/Y3YGbr9/android-logo.jpg",
+    "https://i.ibb.co/L81KSpJ/React-logo.png",
+    "https://i.ibb.co/ydkptPJ/django-logo.jpg",
+    "https://i.ibb.co/V3FYBXL/Nodejs-logo.png",
+    "https://i.ibb.co/9sVXgGz/SQL-logo.png",
+    "https://i.ibb.co/0rvrJfz/Git-logo.png",
   ];
 
   const materials = imageUrls.map((imageUrl) => {

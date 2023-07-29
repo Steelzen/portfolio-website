@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import $ from "jquery";
 
-import titleImg from "../imgs/title-img.jpeg";
-import profileImg from "../imgs/Profile_photo.jpeg";
-
 const Introduction = (props) => {
   const [details, setDetails] = useState(0);
 
@@ -26,16 +23,17 @@ const Introduction = (props) => {
       .then((res) => {
         data = res.data;
         setDetails(data[0]);
+
+        const titleImg = data[0]["title_img_src"];
+        document.documentElement.style.setProperty(
+          "--title-img",
+          `url("${titleImg}")`
+        );
       })
       .catch((err) => {});
   };
 
   useEffect(() => {
-    document.documentElement.style.setProperty(
-      "--title-img",
-      `url("${titleImg}")`
-    );
-
     fetchData();
 
     window.addEventListener("scroll", handleScroll, true);
@@ -50,7 +48,11 @@ const Introduction = (props) => {
     <div className="introduction-wrapper">
       <div className="main-flex">
         <div className="my-picture">
-          <img src={profileImg} className="rounded-circle" alt="profile"></img>
+          <img
+            src={details["photo_src"]}
+            className="rounded-circle"
+            alt="profile"
+          ></img>
         </div>
         <div className="intro-message">
           <h1>WELCOME...</h1>
