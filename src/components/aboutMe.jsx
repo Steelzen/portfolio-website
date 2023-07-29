@@ -1,11 +1,45 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Canvas } from "@react-three/fiber";
-import TechnicalSkillsOct from "./technicalSkillsOct";
+import TechnicalSkills from "./technicalSkills";
+import { Preload } from "@react-three/drei";
+import * as THREE from "three";
+
+import Java from "../imgs/Java-logo.png";
+import JS from "../imgs/Java-Script-logo.png";
+import Python from "../imgs/Python-logo.png";
+import CSS from "../imgs/CSS-logo.png";
+import Android from "../imgs/android-logo.jpg";
+import ReactLogo from "../imgs/React-logo.png";
+import Django from "../imgs/django-logo.jpg";
+import Nodejs from "../imgs/Nodejs-logo.png";
+import SQL from "../imgs/SQL-logo.png";
+import Git from "../imgs/Git-logo.png";
+import Tailwind from "../imgs/Tailwind-logo.jpeg";
 
 const AboutMe = () => {
   const [details, setDetails] = useState([]);
+
+  // Array of image URLs to use as textures
+  const imageUrls = [
+    Java,
+    JS,
+    Python,
+    CSS,
+    Tailwind,
+    Android,
+    ReactLogo,
+    Django,
+    Nodejs,
+    SQL,
+    Git,
+  ];
+
+  const materials = imageUrls.map((imageUrl) => {
+    const texture = new THREE.TextureLoader().load(imageUrl);
+    return new THREE.MeshBasicMaterial({ map: texture });
+  });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,64 +65,17 @@ const AboutMe = () => {
         </h1>
         <p className="aboutme-text">{details["summary"]}</p>
         <h4 className="aboutme-text text-lg font-bold">Technical Skills</h4>
-        <div className="techstack-container">
-          <Canvas>
-            <ambientLight intensity={0.1} />
-            <directionalLight colo="red" position={[0, 0, 5]} />
-            <TechnicalSkillsOct />
-          </Canvas>
-        </div>
-        <div className="tech-img-container">
-          <img
-            className="tech-img"
-            src="https://i.ibb.co/wN35QWj/Java-logo.png"
-            alt="Java-logo"
-          />
-          <img
-            className="tech-img"
-            src="https://i.ibb.co/SvdgbM6/Java-Script-logo.png"
-            alt="JS-logo"
-          />
-          <img
-            className="tech-img"
-            src="https://i.ibb.co/fSCwYVY/Python-logo.png"
-            alt="Python-logo"
-          />
-          <img
-            className="tech-img"
-            src="https://i.ibb.co/Xb5HCZ6/CSS-logo.png"
-            alt="CSS-logo"
-          />
-          <img
-            className="tech-img"
-            src="https://i.ibb.co/Y3YGbr9/android-logo.jpg"
-            alt="Android-logo"
-          />
-          <img
-            className="tech-img"
-            src="https://i.ibb.co/L81KSpJ/React-logo.png"
-            alt="React-logo"
-          />
-          <img
-            className="tech-img"
-            src="https://i.ibb.co/ydkptPJ/django-logo.jpg"
-            alt="Django-logo"
-          />
-          <img
-            className="tech-img"
-            src="https://i.ibb.co/V3FYBXL/Nodejs-logo.png"
-            alt="Nodejs-logo"
-          />
-          <img
-            className="tech-img"
-            src="https://i.ibb.co/9sVXgGz/SQL-logo.png"
-            alt="SQL-logo"
-          />
-          <img
-            className="tech-img"
-            src="https://i.ibb.co/0rvrJfz/Git-logo.png"
-            alt="Git-logo"
-          />
+        <div className="techstack-container flex w-full flex-wrap mt-4 mb-8 content-center">
+          {materials.map((material, index) => (
+            <Canvas
+              key={index}
+              style={{ width: "100px", height: "130px" }}
+              camera={{ position: [0, 0, 5], fov: 50 }}
+            >
+              <TechnicalSkills map={material.map} />
+              <Preload all />
+            </Canvas>
+          ))}
         </div>
         <h4 className="aboutme-text text-lg font-bold">Contact Me</h4>
         <div className="contactme-container font-bold text-blue-500">
