@@ -12,13 +12,8 @@ class MainPage extends Component {
     return (
       <main className="container-main">
         <Introduction />
-        <div className="main-page">
+        <div className="main-page bg-gradient-to-r from-sky-500 to-indigo-500">
           <AboutMe />
-          <div className="project-title-wrapper">
-            <div className="project-title-container">
-              <h1 className="text-3xl "> My Works </h1>
-            </div>
-          </div>
           <Project />
         </div>
       </main>

@@ -60,9 +60,9 @@ export const ContactMe = () => {
   };
 
   return (
-    <div className="contactme-wrapper">
-      <div className="contactme-title-container">
-        <h1>Contact Me</h1>
+    <div className="contactme-wrapper ">
+      <div className="contactme-title-container ">
+        <h1 className="font-mono text-2xl font-extrabold">CONTACT ME</h1>
       </div>
       <div className="contactme-form-container">
         <form ref={form} onSubmit={sendEmail}>
@@ -70,7 +70,7 @@ export const ContactMe = () => {
           <input
             type="text"
             name="user_name"
-            className="contactme-input-name"
+            className="contactme-input-name mb-3"
             placeholder="Name"
           />
           <p className="name-warning"></p>
@@ -78,14 +78,14 @@ export const ContactMe = () => {
           <input
             type="email"
             name="user_email"
-            className="contactme-input-email"
+            className="contactme-input-email mb-3"
             placeholder="Email"
           />
           <p className="email-warning"></p>
           <label>Message</label>
           <textarea
             name="message"
-            className="contactme-input-message"
+            className="contactme-input-message mb-3"
             placeholder="Message"
           />
           <p className="message-warning"></p>

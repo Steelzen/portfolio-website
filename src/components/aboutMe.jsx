@@ -45,12 +45,9 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className="aboutme">
-      <div className="aboutme-container">
-        <h1 className="aboutme-text text-lg font-bold">
-          {" "}
-          About {details["name"]}{" "}
-        </h1>
+    <div className="aboutme bg-black ">
+      <div className="aboutme-container text-slate-300">
+        <h1 className="aboutme-text text-lg font-bold"> About Me </h1>
         <p className="aboutme-text">{details["summary"]}</p>
         <h4 className="aboutme-text text-lg font-bold">Technical Skills</h4>
         <div className="techstack-container flex w-full flex-wrap mt-4 mb-8 content-center">
@@ -72,7 +69,7 @@ const AboutMe = () => {
             LinkedIn
           </a>
           <a href={details["github"]} target="_blank">
-            Github
+            GitHub
           </a>
         </div>
       </div>
