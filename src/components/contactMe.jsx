@@ -60,7 +60,7 @@ export const ContactMe = () => {
   };
 
   return (
-    <div className="contactme-wrapper ">
+    <div className="contactme-wrapper">
       <div className="contactme-title-container ">
         <h1 className="font-mono text-2xl font-extrabold">CONTACT ME</h1>
       </div>

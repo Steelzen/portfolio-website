@@ -5,7 +5,7 @@ const Footer = (props) => {
 
   return (
     <div className="footer">
-      <div className="ft-content">
+      <div className="ft-content text-slate-700">
         <div className="footer-link">
           <a
             className="admin-link"

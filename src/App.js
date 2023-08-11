@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div className="main-content">
+      <div className="main-content bg-gradient-to-r from-sky-500 to-indigo-500">
         <NavBar className="navbar" />
         <Routes>
           <Route exact path="/" element={<MainPage />} />

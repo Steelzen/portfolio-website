@@ -191,14 +191,10 @@ input[type="submit"]:hover {
 .project-title-container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1315px;
   margin: auto;
   justify-content: center;
   align-items: center;
-  background-color: black;
   color: white;
-  border-top-style: solid;
-  border-top-color: rgb(186, 174, 174);
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -255,7 +251,6 @@ input[type="submit"]:hover {
   justify-content: center;
   max-width: 100%;
   height: 75px;
-  background-color: rgb(120, 118, 118);
   border-top: 2px solid rgb(241, 123, 19);
 }
 
@@ -271,17 +266,13 @@ input[type="submit"]:hover {
 }
 
 .footer-link {
-  border-bottom: 1px solid rgb(170, 168, 168);
+  border-bottom: 1px solid rgb(178, 176, 176);
   text-align: left;
 }
 
 .copyright-container {
   text-align: left;
   font-size: x-small;
-}
-
-.admin-link {
-  color: rgb(234, 228, 228);
 }
 
 /** Contact Me **/
@@ -292,12 +283,11 @@ input[type="submit"]:hover {
 .contactme-title-container > h1 {
   font-family: Sans, Roboto, Oxygen, Ubuntu, Cantarell, Lato, Helvetica Neue,
     sans-serif;
-  color: rgb(139, 138, 136);
+  color: rgb(226, 226, 224);
 }
 
 .contactme-wrapper {
   width: 100%;
-  background-color: rgb(244, 241, 241);
   padding: 20px;
 }
 
