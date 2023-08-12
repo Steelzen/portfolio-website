@@ -14,9 +14,6 @@ class MainPage extends Component {
         <Introduction />
         <AboutMe />
         <Project />
-        {/* <div className="main-page bg-gradient-to-r from-sky-500 to-indigo-500">
-          <Project />
-        </div> */}
       </main>
     );
   }

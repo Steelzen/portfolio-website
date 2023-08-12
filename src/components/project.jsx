@@ -23,7 +23,7 @@ function Project() {
   const items = details.map((detail) => (
     <div
       key={detail["id"]}
-      className="m-0 my-2 mx-2 shrink-0 w-350 bg-white rounded-lg shadow-md transition-all duration-500 ease-in-out transform hover:scale-105 hover:rotate-10 cursor-pointer"
+      className="m-0 my-3 shrink-0 w-350 bg-white rounded-lg shadow-md transition-all duration-500 ease-in-out transform hover:scale-105 hover:rotate-10 cursor-pointer sm: mx-3"
     >
       <a href={detail["site_link"]}>
         <img
@@ -54,7 +54,7 @@ function Project() {
         </div>
       </div>
       <div class="max-w-screen-2xl flex justify-center md: mx-auto">
-        <div className="flex flex-col space-x-4 space-y-4 py-4 px-2 sm:flex-row overflow-x-auto ">
+        <div className="flex flex-col space-x-4 space-y-4 py-4 px-2 sm:flex-row flex-wrap justify-evenly">
           {items}
         </div>
       </div>
