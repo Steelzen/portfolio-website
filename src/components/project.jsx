@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
 function Project() {
   const [details, setDetails] = useState([]);
+  const scrollContainerRef = useRef(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -20,22 +22,30 @@ function Project() {
     fetchData();
   }, []);
 
+  const scrollLeft = () => {
+    scrollContainerRef.current.scrollBy({ left: -200, behavior: "smooth" });
+  };
+
+  const scrollRight = () => {
+    scrollContainerRef.current.scrollBy({ left: 200, behavior: "smooth" });
+  };
+
   const items = details.map((detail) => (
     <div
-      key={detail["id"]}
-      className="m-0 my-3 shrink-0 w-350 bg-white rounded-lg shadow-md transition-all duration-500 ease-in-out transform hover:scale-105 hover:rotate-10 cursor-pointer sm: mx-3"
+      key={detail.id}
+      className="flex-shrink-0 w-350 bg-white rounded-lg shadow-md transition-all duration-500 ease-in-out transform hover:scale-105 hover:rotate-10 cursor-pointer mx-3 my-3"
     >
-      <a href={detail["site_link"]}>
+      <a href={detail.site_link}>
         <img
           className="w-full h-300 object-cover rounded-t-lg"
-          src={detail["img_src"]}
+          src={detail.img_src}
           alt="project"
         />
         <div className="p-4">
-          <h3 className="text-lg font-semibold mb-2">{detail["name"]}</h3>
-          <p className="text-sm text-gray-600 text-left">{detail["content"]}</p>
+          <h3 className="text-lg font-semibold mb-2">{detail.name}</h3>
+          <p className="text-sm text-gray-600 text-left">{detail.content}</p>
           <p className="text-sm text-gray-600 text-left mt-2 font-bold">
-            {detail["additional_info"]}
+            {detail.additional_info}
           </p>
         </div>
       </a>
@@ -53,10 +63,19 @@ function Project() {
           </div>
         </div>
       </div>
-      <div class="max-w-screen-2xl flex justify-center md: mx-auto">
-        <div className="flex flex-col space-x-4 space-y-4 py-4 px-2 sm:flex-row flex-wrap justify-evenly">
+      <div className="flex w-full mx-auto overflow-hidden">
+        <button onClick={scrollLeft} className="p-4">
+          <ChevronLeftIcon className="w-6 h-6 text-gray-600" />
+        </button>
+        <div
+          ref={scrollContainerRef}
+          className="flex overflow-x-scroll space-x-4 py-4 px-2 scrollbar-hide"
+        >
           {items}
         </div>
+        <button onClick={scrollRight} className="p-4">
+          <ChevronRightIcon className="w-6 h-6 text-gray-600" />
+        </button>
       </div>
     </div>
   );
