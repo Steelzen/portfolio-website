@@ -63,17 +63,17 @@ function Project() {
           </div>
         </div>
       </div>
-      <div className="flex w-full mx-auto overflow-hidden">
-        <button onClick={scrollLeft} className="p-4">
+      <div className="flex w-full justify-center mx-auto overflow-hidden">
+        <button onClick={scrollLeft} className="p-4 hidden sm:inline-block">
           <ChevronLeftIcon className="w-6 h-6 text-gray-600" />
         </button>
         <div
           ref={scrollContainerRef}
-          className="flex overflow-x-scroll space-x-4 py-4 px-2 scrollbar-hide"
+          className="flex flex-col  sm:flex-row overflow-x-scroll space-x-4 py-4 px-2 scrollbar-hide"
         >
           {items}
         </div>
-        <button onClick={scrollRight} className="p-4">
+        <button onClick={scrollRight} className="p-4 hidden sm:inline-block">
           <ChevronRightIcon className="w-6 h-6 text-gray-600" />
         </button>
       </div>
