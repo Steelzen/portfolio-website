@@ -33,7 +33,7 @@ function Project() {
   const items = details.map((detail) => (
     <div
       key={detail.id}
-      className="flex-shrink-0 w-350 bg-white rounded-lg shadow-md transition-all duration-500 ease-in-out transform hover:scale-105 hover:rotate-10 cursor-pointer mx-3 my-3"
+      className="flex-shrink-0 w-350 bg-white rounded-lg shadow-md transition-all duration-500 ease-in-out transform hover:scale-105 hover:rotate-10 cursor-pointer my-3 mx-2 "
     >
       <a href={detail.site_link}>
         <img
@@ -63,13 +63,13 @@ function Project() {
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-center mx-auto overflow-hidden">
+      <div className="flex w-full mx-auto justify-center overflow-hidden">
         <button onClick={scrollLeft} className="p-4 hidden sm:inline-block">
           <ChevronLeftIcon className="w-6 h-6 text-gray-600" />
         </button>
         <div
           ref={scrollContainerRef}
-          className="flex flex-col  sm:flex-row overflow-x-scroll space-x-4 py-4 px-2 scrollbar-hide"
+          className="flex flex-col space-x-4 overflow-x-scroll sm:flex-row sm:px-2 py-4 scrollbar-hide"
         >
           {items}
         </div>
