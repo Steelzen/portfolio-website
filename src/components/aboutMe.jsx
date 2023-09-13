@@ -21,21 +21,6 @@ import gitLogo from "../resource/Git-logo.png";
 const AboutMe = () => {
   const [details, setDetails] = useState([]);
 
-  // Array of image URLs to use as textures
-  // const imageUrls = [
-  //   "https://i.ibb.co/Z8znc9m/Java-logo.png",
-  //   "https://i.ibb.co/SvdgbM6/Java-Script-logo.png",
-  //   "https://i.ibb.co/fSCwYVY/Python-logo.png",
-  //   "https://i.ibb.co/Xb5HCZ6/CSS-logo.png",
-  //   "https://i.ibb.co/4tHqF2F/Tailwind-logo.jpg",
-  //   "https://i.ibb.co/Y3YGbr9/android-logo.jpg",
-  //   "https://i.ibb.co/L81KSpJ/React-logo.png",
-  //   "https://i.ibb.co/ydkptPJ/django-logo.jpg",
-  //   "https://i.ibb.co/V3FYBXL/Nodejs-logo.png",
-  //   "https://i.ibb.co/9sVXgGz/SQL-logo.png",
-  //   "https://i.ibb.co/0rvrJfz/Git-logo.png",
-  // ];
-
   const imageUrls = [
     javaLogo,
     javaScriptLogo,
