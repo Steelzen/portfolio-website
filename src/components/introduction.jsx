@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import $ from "jquery";
 
+import profilePhoto from "../resource/Profile-photo.jpg";
+
 const Introduction = (props) => {
   const [details, setDetails] = useState(0);
 
@@ -49,7 +51,8 @@ const Introduction = (props) => {
       <div className="flex flex-col justify-center justify-normal md:flex-row-reverse">
         <div className="flex justify-center md:justify-start">
           <img
-            src={details["photo_src"]}
+            // src={details["photo_src"]}
+            src={profilePhoto}
             className="rounded-full h-48 w-48 md:ml-5 shadow-xl hover:shadow-2xl"
             alt="profile"
           />

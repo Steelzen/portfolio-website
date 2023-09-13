@@ -6,22 +6,48 @@ import TechnicalSkills from "./technicalSkills";
 import { Preload } from "@react-three/drei";
 import * as THREE from "three";
 
+import javaLogo from "../resource/Java-logo.png";
+import javaScriptLogo from "../resource/Java-Script-logo.png";
+import pythonLogo from "../resource/Python-logo.png";
+import cssLogo from "../resource/CSS-logo.png";
+import tailwindLogo from "../resource/Tailwind-logo.jpeg";
+import androidLogo from "../resource/android-logo.jpg";
+import reactLogo from "../resource/React-logo.png";
+import djangoLogo from "../resource/django-logo.jpg";
+import nodejsLogo from "../resource/Nodejs-logo.png";
+import sqlLogo from "../resource/SQL-logo.png";
+import gitLogo from "../resource/Git-logo.png";
+
 const AboutMe = () => {
   const [details, setDetails] = useState([]);
 
   // Array of image URLs to use as textures
+  // const imageUrls = [
+  //   "https://i.ibb.co/Z8znc9m/Java-logo.png",
+  //   "https://i.ibb.co/SvdgbM6/Java-Script-logo.png",
+  //   "https://i.ibb.co/fSCwYVY/Python-logo.png",
+  //   "https://i.ibb.co/Xb5HCZ6/CSS-logo.png",
+  //   "https://i.ibb.co/4tHqF2F/Tailwind-logo.jpg",
+  //   "https://i.ibb.co/Y3YGbr9/android-logo.jpg",
+  //   "https://i.ibb.co/L81KSpJ/React-logo.png",
+  //   "https://i.ibb.co/ydkptPJ/django-logo.jpg",
+  //   "https://i.ibb.co/V3FYBXL/Nodejs-logo.png",
+  //   "https://i.ibb.co/9sVXgGz/SQL-logo.png",
+  //   "https://i.ibb.co/0rvrJfz/Git-logo.png",
+  // ];
+
   const imageUrls = [
-    "https://i.ibb.co/Z8znc9m/Java-logo.png",
-    "https://i.ibb.co/SvdgbM6/Java-Script-logo.png",
-    "https://i.ibb.co/fSCwYVY/Python-logo.png",
-    "https://i.ibb.co/Xb5HCZ6/CSS-logo.png",
-    "https://i.ibb.co/4tHqF2F/Tailwind-logo.jpg",
-    "https://i.ibb.co/Y3YGbr9/android-logo.jpg",
-    "https://i.ibb.co/L81KSpJ/React-logo.png",
-    "https://i.ibb.co/ydkptPJ/django-logo.jpg",
-    "https://i.ibb.co/V3FYBXL/Nodejs-logo.png",
-    "https://i.ibb.co/9sVXgGz/SQL-logo.png",
-    "https://i.ibb.co/0rvrJfz/Git-logo.png",
+    javaLogo,
+    javaScriptLogo,
+    pythonLogo,
+    cssLogo,
+    tailwindLogo,
+    androidLogo,
+    reactLogo,
+    djangoLogo,
+    nodejsLogo,
+    sqlLogo,
+    gitLogo,
   ];
 
   const materials = imageUrls.map((imageUrl) => {
